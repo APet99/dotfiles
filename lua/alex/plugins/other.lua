@@ -7,7 +7,15 @@ local other = {
 		"nvim-telescope/telescope-fzf-native.nvim",
 		build = "make",
 	},
-	{ "sindrets/diffview.nvim", dependencies = "nvim-lua/plenary.nvim" },
+	{
+		"sindrets/diffview.nvim",
+		name = "diffview",
+		dependencies = "nvim-lua/plenary.nvim",
+		event = "BufRead",
+		config = function()
+			require("diffview").setup()
+		end,
+	},
 	"tpope/vim-surround",
 }
 

@@ -36,6 +36,7 @@ keymap.set("n", "<leader>tn", ":tabn<CR>") --  go to next tab
 keymap.set("n", "<leader>tp", ":tabp<CR>") --  go to previous tab
 
 -- plugin keymaps
+--
 
 -- vim-maximizer
 keymap.set("n", "<leader>sm", ":MaximizerToggle<CR>")
@@ -50,6 +51,7 @@ keymap.set("n", "<leader>fg", "<cmd>Telescope live_grep<cr>") -- find string in 
 keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>") -- find string under cursor in current working directory
 keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>") -- list open buffers in current neovim instance
 keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>") -- list available help tags
+keymap.set("n", "<leader>fp", "<cmd>Telescope projects<cr>") -- list available help tags
 
 -- diff-view
 keymap.set("n", "<leader>do", "<cmd>DiffviewOpen<CR>")
@@ -70,8 +72,8 @@ end, opts)
 
 -- Telescope
 -- git
-keymap.set("n", "<leader>cm", "<cmd> Telescope git_commits <CR>", opts)
-keymap.set("n", "<leader>gt", "<cmd> Telescope git_status <CR>", opts)
+keymap.set("n", "<leader>cm", "<cmd>Telescope git_commits <CR>", opts)
+keymap.set("n", "<leader>gt", "<cmd>Telescope git_status <CR>", opts)
 
 -- Editor Config
-keymap.set("n", "<leader>config", ":e ~/.config/nvim <CR>", opts)
+keymap.set("n", "<leader>config", "e ~/.config/nvim <CR>", opts)
