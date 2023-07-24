@@ -1,5 +1,6 @@
 local comment = {
 	"numToStr/Comment.nvim",
+
 	keys = {
 		{
 			"<C-_>",
@@ -43,8 +44,6 @@ local comment = {
 		},
 	},
 	opts = {
-
-		pre_hook = require("ts_context_commentstring.integrations.comment_nvim").create_pre_hook(),
 		toggler = {
 			---Line-comment toggle keymap
 			line = "gcc",
@@ -57,6 +56,7 @@ local comment = {
 			extra = true,
 		},
 	},
+	after = "ts_context_commentstring",
 }
 
 return comment
