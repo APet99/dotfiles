@@ -1,13 +1,31 @@
 # dotfiles
 
 ## Neovim
-``` brew install neovim ```
+
+`brew install neovim`
+
+## Formatters//Linters
+
+```
+npm i -g eslint_d
+$ npm install -g @fsouza/prettierd
+brew install stylua
+brew install autopep8
+brew install rustfmt
+```
+
+## Nerd Fonts
+
+[download](https://www.nerdfonts.com/font-downloads)
 
 
-## Tmux
-``` brew install tmux ```\
-<b>Note</b> - in home directory setup .tmux.config file
+## Requirements
+- neovim version >0.9X should be installed
+- A NerdFont should be installed.
 
 
-### Tmux package manager
-```git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm ```
+## Installation
+1. Install a nerd font, and set it for your terminal
+2. Install daemons for formatting/ linting.
+3. Place config where it belongs (`~/.config/nvim`):
+`git clone --depth 1 https://github.com/APet99/dotfiles ~:/.config/nvim`
